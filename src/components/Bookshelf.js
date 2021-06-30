@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Book from './Book'
+import BooksGrid from './BooksGrid'
 
 const Bookshelf = (props) => {
   const { title } = props;
@@ -9,21 +9,14 @@ const Bookshelf = (props) => {
     <div className='bookshelf'>
       <h2 className='bookshelf-title'>{title}</h2>
       <div className='bookshelf-books'>
-        <ol className='books-grid'>
-          <li>
-            <Book />
-          </li>
-          <li>
-            <Book />
-          </li>
-        </ol>
+        <BooksGrid />
       </div>
     </div>
   )
 }
 
 Bookshelf.propTypes = {
-  title: PropTypes.string 
+  title: PropTypes.string
 }
 
 export default Bookshelf
