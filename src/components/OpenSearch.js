@@ -1,3 +1,7 @@
+/**
+ * @file Renders the open search button
+ */
+
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -9,6 +13,6 @@ const OpenSearch = () => {
       </Link>
     </div>
   )
-}
+};
 
-export default OpenSearch
+export default OpenSearch;
